@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lucas Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <h1 id="title">Lucas Survey Form</h1>
+ <p id="description">Please fill out this form with the required information.</p>
+ <form id="survey-form">
+  <fieldset> 
+  <label id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required /></label>
+  <br>
+  <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email" required /></label>
+  <br>
+  <label id="number-label">Age: <input id="number" type="number" min="13" max="120" placeholder="Enter your age" /></label>
+  <br>
+  <label>What kind of sports do you do?<select id="dropdown">
+    <option value="">(select one)</option>
+    <option value="1">Football</option>
+    <option value="2">Basketball</option>
+    <option value="3">Tennis</option>
+    <option value="4">Hockey</option>
+    <option value="5">Baseball</option>
+    <option value="6">Other sports...</option> 
+    </select>
+    </label>
+    <br>
+    <label>What is your gender?</label>
+    <input id="male" type="radio" name="gender" value="male" />
+    <label>Male</label>
+    <input type="radio" id="male" name="gender" value="female" />
+    <label>Female</label>
+    <br>
+     What do you like to do in your free time?
+     <br>
+    <input type="checkbox" value="playing videogames" /><label> Playing videogames</label>
+    <br>
+    <input type="checkbox" value="reading a book" /><label> Reading a book</label>
+    <br>
+    <input type="checkbox" value="playing outside" /><label> Playing outside</label>
+    <br>
+    <input type="checkbox" value="watching Netflix" /><label> Watching Netflix</label>
+    <br>
+    <label>Provide a bio:<textarea id="bio" name="bio" rows="3" cols="30"></textarea>
+     </label> 
+     </fieldset> 
+      <input id="submit" type="submit" value="Submit" />
+  </fieldset>  
+ </form>
+ </body> 
+</html> 
